@@ -8,7 +8,7 @@
   argv = require('optimist').alias('f', 'fallback').alias('v', 'verbose').argv;
 
   if (argv.fallback != null) {
-    fallback = (typeof fallback === 'string' && argv.fallback) || '8.8.8.8';
+    fallback = (typeof argv.fallback === 'string' && argv.fallback) || '8.8.8.8';
   }
 
   if (fallback && (argv.verbose != null)) {

@@ -1,7 +1,7 @@
 dns = require 'native-dns'
 argv = require('optimist').alias('f', 'fallback').alias('v', 'verbose').argv
 
-fallback = (typeof fallback == 'string' and argv.fallback) or '8.8.8.8' if argv.fallback?
+fallback = (typeof argv.fallback == 'string' and argv.fallback) or '8.8.8.8' if argv.fallback?
 console.log "[debug] Fallback host is #{ fallback }" if fallback and argv.verbose?
 
 server = dns.createServer()
