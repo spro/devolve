@@ -1,11 +1,19 @@
 devolve
 =======
 
-Mini DNS server to route *.dev domains to localhost.
+Mini DNS server to resolve .dev domains to localhost.
 
-## Usage:
+## Install
 
-1. Install: `npm install -g devolve`
-2. Run (requires port 53 priviledges): `sudo devolve`
-3. Add the IP of the machine devolve is running on as a DNS resolver.
-4. Access *something*.dev and watch it get routed to 127.0.0.1
+With npm: `npm install -g http://github.com/spro/devolve.git`
+
+## Run
+
+```sudo devolve```
+
+**Note**: Requires root privileges to bind on port 53.
+
+### Options
+
+* `-v` Verbose output.
+* `-f [fallback DNS IP]` Use a fallback DNS server for non-.dev domains. When used without an argument it assumes *8.8.8.8*, one of Google's public DNS servers. When not used it simply returns "not found" for non-.dev queries and assumes the system will handle fallback.
