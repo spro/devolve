@@ -1,6 +1,6 @@
 {
     "name": "devolve",
-    "version": "0.0.0",
+    "version": "0.1.0",
     "description": "Mini DNS server to resolve *.dev domains to localhost.",
     "homepage": "http://github.com/spro/devolve",
     "repository": {
@@ -23,7 +23,8 @@
         "build": "./build.sh"
     },
     "dependencies": {
-        "native-dns": "0.4.1"
+        "native-dns": "0.4.1",
+        "optimist": "0.5.2"
     },
     "preferGlobal": true
 }
