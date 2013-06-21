@@ -5,9 +5,16 @@ Mini DNS server to route *.dev domains to localhost.
 
 ## Usage:
 
-Run as root (to access port 53)
+1. Install
+
 ```
-sudo coffee devolve.coffee
+npm install -g devolve
 ```
 
-Add the IP of the machine devolve is running on as a DNS resolver.
+2. Run with root priviledges to control port 53
+
+```
+sudo devolve
+```
+
+3. Add the IP of the machine devolve is running on as a DNS resolver.
