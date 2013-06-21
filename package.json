@@ -1,0 +1,26 @@
+{
+    "name": "devolve",
+    "version": "0.0.0",
+    "description": "Mini DNS server to resolve *.dev domains to localhost.",
+    "homepage": "http://github.com/spro/devolve",
+    "repository": {
+        "type": "git",
+        "url": "http://github.com/spro/devolve.git"
+    },
+    "author": {
+        "name": "Sean Robertson",
+        "url": "http://sprobertson.com"
+    },
+    "keywords": [
+        "dns",
+        "dev",
+        "resolver"
+    ],
+    "bin": {
+        "devolve": "bin/devolve.js"
+    },
+    "dependencies": {
+        "native-dns": "0.4.1"
+    },
+    "preferGlobal": true
+}
