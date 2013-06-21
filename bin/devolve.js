@@ -17,7 +17,7 @@
       res.answer.push(dns.A({
         name: req.question[0].name,
         address: '127.0.0.1',
-        ttl: 600
+        ttl: 86400
       }));
     } else {
       console.log("[debug] Skipping " + req.question[0].name);
